@@ -1,3 +1,11 @@
+import bannerImg from "../assets/home.svg";
+import "./Banner.css";
+
 export default function Banner() {
-  return <h1>Banner OK</h1>
+  return (
+    <div className="banner">
+      <h1 className="banner-h1">
+        Chez vous, partout et ailleurs</h1>
+    </div>
+  );
 }
