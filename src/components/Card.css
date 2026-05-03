@@ -3,7 +3,7 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 50px; 
 width: 1240px;
-height: 829px;
+padding: 50px;
 border-radius: 25px;
 background: #F6F6F6;
 margin: 0 auto;
@@ -15,11 +15,12 @@ width: 340px;
 height: 340px;
 display: flex;
 align-items: flex-end;
+
 padding: 20px;
 border-radius: 10px;
 background-size: cover;
 background-position: center;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+
 }
 
 .card-title {

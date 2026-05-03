@@ -15,10 +15,12 @@ export default function Home() {
           <Card
             key={item.id}
             title={item.title}
-            image={item.image}
-          />
-        ))}
+            image={item.cover}
+             />
+         ))}
       </div>
+     
+      
       <Footer />
     </>
   );
