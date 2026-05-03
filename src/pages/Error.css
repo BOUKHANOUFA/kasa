@@ -1,11 +1,13 @@
 .error404{
  display: flex;
 width: 597px;
-height: 263px;
+
 flex-direction: column;
 justify-content: center;
 flex-shrink: 0;
 gap: 30px;
+text-align: center;
+margin: 100px auto;
 }
 .error404-number {
 color: #FF6060;

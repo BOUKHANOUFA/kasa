@@ -10,10 +10,10 @@ import Footer from "../components/Footer";
     <>
           <Header />
          
-<div className="error">
-   <h1 className="error-number">404</h1>
-   <h2 className="error-text">Oups! La page que vous demandez n'existe pas</h2>
-   <Link to="/" className="error-link">Retourner sur la page d'Accueil</Link>
+<div className="error404">
+   <h1 className="error404-number">404</h1>
+   <h2 className="error404-text">Oups! La page que vous demandez n'existe pas</h2>
+   <Link to="/" className="error404-link">Retourner sur la page d'Accueil</Link>
   </div>
    <Footer />
    </>
