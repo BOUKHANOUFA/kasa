@@ -1,0 +1,13 @@
+.about {
+  align-items: center;
+  gap: 50px;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+   margin: 0 auto;
+  background-image: url("../assets/about.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+ }
