@@ -3,11 +3,13 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 max-width: 1240px;
-height: 68px;
+min-height: 68px;
+margin: auto;
 
 align-items: center;
 margin: auto;
 padding: 20px;
+box-sizing: border-box;
 
 }
 .logo{

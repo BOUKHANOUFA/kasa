@@ -14,7 +14,7 @@ export default function Header() {
           className>Accueil</NavLink>
         <NavLink
         to="/about"
-        classNameA> propos</NavLink>
+        classNameA>A propos</NavLink>
         </nav>
     </header>
   )
