@@ -1,7 +1,7 @@
 import bannerImg from "../assets/home.svg";
 import "./Banner.css";
 
-export default function Banner() {
+ function Banner() {
   return (
     <div className="banner">
       <h1 className="banner-h1">
@@ -9,3 +9,4 @@ export default function Banner() {
     </div>
   );
 }
+export default Banner

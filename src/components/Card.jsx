@@ -1,7 +1,7 @@
 
 import "./Card.css";
 
-export default function Card({ title, image }) {
+ function Card({ title, image }) {
   return (
     <div
       className="card"
@@ -11,3 +11,4 @@ export default function Card({ title, image }) {
     </div>
   );
 }
+export default Card

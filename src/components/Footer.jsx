@@ -2,7 +2,7 @@
 import "./Footer.css"
 import footer from "../assets/footer.svg"
 
-export default function Footer() {
+ function Footer() {
   return (
     <footer className="footer">
       <img className="footer-img" src={footer} alt="footer kasa" />
@@ -11,3 +11,4 @@ export default function Footer() {
     </footer>
     )
 }
+export default Footer
