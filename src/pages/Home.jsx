@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
  function Home() {
   return (
@@ -12,11 +13,13 @@ import Footer from "../components/Footer";
 
       <div className="cards">
         {logements.map((item) => (
+          <Link to={`/logement/${item.id}`} key={item.id}>
           <Card
-            key={item.id}
+           
             title={item.title}
             image={item.cover}
              />
+             </Link>
          ))}
       </div>
      
