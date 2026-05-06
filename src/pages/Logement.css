@@ -1,0 +1,10 @@
+.carrousel{
+width: 1240px;
+height: 415px; 
+border-radius: 25px;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.flèche{
+width: 46px;
+height: 79px;
+}

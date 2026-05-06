@@ -1,3 +1,5 @@
+
+
 .collapse {
 display: flex;
 width: 1440px;
@@ -6,7 +8,7 @@ flex-direction: column;
 align-items: center;
 gap: 38px;
 background: #FFF;
-
+margin: auto;
 }
 .collapse-button {
  display: flex;
@@ -19,23 +21,28 @@ border-radius: 5px;
 background: var(--Red, #FF6060);
 color: #FFF;
 font-family: Montserrat;
+
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: 142.6%; 
-flex: 1 0 0;
-align-self: stretch;
+
 }
 .collapse-content {
   padding: 15px;
   background: white;
   color: black;
-
+  width: 956px;
   font-size: 16px;
   line-height: 1.5;
 }
-.arrow-collapse.svg{
-width: 24px;
-height: 13px;
-transform: rotate 
+
+.arrow-collapse {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-collapse.open {
+  transform: rotate(180deg);
 }
