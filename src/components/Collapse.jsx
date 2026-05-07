@@ -4,6 +4,7 @@ import "./Collapse.css";
 import { useState } from "react";
 
 function Collapse({ title, content }) {
+  
   const [open, setOpen] = useState(false);
 
   return (
