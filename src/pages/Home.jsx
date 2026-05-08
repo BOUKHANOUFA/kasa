@@ -12,12 +12,13 @@ import { Link } from "react-router-dom";
       <Banner />
 
       <div className="cards">
-        {logements.map((item) => (
-          <Link to={`/logement/${item.id}`} key={item.id}>
+        {logements.map((logement) => (
+          <Link to={`/logement/${logement.id}`} key={logement.id}>
           <Card
+          
            
-            title={item.title}
-            image={item.cover}
+            title={logement.title}
+            image={logement.cover}
              />
              </Link>
          ))}
