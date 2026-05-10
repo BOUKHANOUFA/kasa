@@ -8,7 +8,7 @@ import "./Logement.css";
 function Logement() {
   const { id } = useParams();
 
-  const logement = logements.find((item) => item.id === id);
+  const logement = logements.find((logement) => logement.id === id);
 
   if (!logement) {
     return <p>Logement introuvable</p>;
