@@ -11,7 +11,7 @@ import Collapse from "../components/Collapse";
          
          
 <div className="about"></div>
-<div>
+<div className="collapse">
   <Collapse 
     title="Fiabilité"
   content="Les annonces postées sur kasa garantissent une faibilité totale. Les photos sont conformes aux logements, et toute les informations sont régulièrement véfifiées par nos équipes. "/>
@@ -25,6 +25,7 @@ import Collapse from "../components/Collapse";
 title="Sécurité"
 content="La sécurité est la priorité de kasa.Aussi bien pour nos hotes que pour les voyageurs, chaque logement correspond au critères de sécurité établis par nos services.En laissant une note aussi bien à l'hte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés.Nous organisons également des ateliers sur la sécurité domestique pour nos hotes. "/>
  </div>
+ 
    <Footer />
    </>
 );

@@ -44,6 +44,7 @@ function Carousel({ pictures }) {
         alt="suivant"
       />
     </div>
+    
   );
 }
 

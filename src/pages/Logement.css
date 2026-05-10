@@ -1,10 +1,98 @@
-.carrousel{
-width: 1240px;
-height: 415px; 
-border-radius: 25px;
-background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+.carrousel {
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
 }
-.flèche{
-width: 46px;
-height: 79px;
+
+.arrow {
+  width: 46px;
+  height: 79px;
+  cursor: pointer;
 }
+
+/* TITRE */
+.title {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* TEXTE LOCALISATION */
+.text {
+  font-size: 18px;
+  color: black;
+  margin-top: 5px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #ff6060;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  width: 115px;
+height: 25px;
+}
+
+/* HEADER (titre + host) */
+.logement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+/* HOST */
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+/* BLOCS DESCRIPTION / EQUIPEMENTS */
+.box {
+  margin: 20px;
+}
+
+.box h2 {
+  background: #ff6060;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+/* LISTE ÉQUIPEMENTS */
+.box ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.box li {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+

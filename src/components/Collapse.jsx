@@ -8,6 +8,7 @@ function Collapse({ title, content }) {
   const [open, setOpen] = useState(false);
 
   return (
+    
     <div className="collapse">
 
       <div

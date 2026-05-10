@@ -1,19 +1,21 @@
 
-
 .collapse {
+
 display: flex;
+
 width: 1440px;
-padding-top: 40px;
 flex-direction: column;
 align-items: center;
-gap: 38px;
+gap: 20px;
 background: #FFF;
 margin: auto;
+padding-top: 20px;
+
 }
 .collapse-button {
  display: flex;
  justify-content: space-between;
-width: 956px;
+width: 1023px;
 height: 34px;
 padding: 10px 20px 10px 15px;
 align-items: center;
