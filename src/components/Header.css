@@ -29,3 +29,21 @@ flex-shrink: 0;
   font-weight: 500;
 }
 
+.active-link {
+  position: relative;
+}
+
+
+.active-link::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -2px; 
+
+  width: 100%;
+  height: 1px;
+
+  background-color: black;
+  border-radius: 2px;
+}
