@@ -1,35 +1,24 @@
+import { useState } from "react";
+import "./Collapse.css";
 
 import arrow from "../assets/arrow-collapse.svg";
-import "./Collapse.css";
-import { useState } from "react";
 
 function Collapse({ title, content }) {
-  
   const [open, setOpen] = useState(false);
 
   return (
-    
     <div className="collapse">
+      <div className="collapse-button" onClick={() => setOpen(!open)}>
+        <span>{title}</span>
 
-      <div
-        className="collapse-button"
-        
-        onClick={() => setOpen(!open)}
-      >
-        {title}
         <img
-    src={arrow}
-    className={`arrow-collapse ${open ? "open" : ""}`}
-    alt="arrow"
-  />
+          src={arrow}
+          alt="arrow"
+          className={open ? "arrow-collapse open" : "arrow-collapse"}
+        />
       </div>
 
-      {open && (
-        <div className="collapse-content">
-          {content}
-        </div>
-      )}
-
+      {open && <div className="collapse-content">{content}</div>}
     </div>
   );
 }

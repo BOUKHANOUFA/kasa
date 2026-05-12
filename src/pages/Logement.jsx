@@ -3,14 +3,16 @@ import Slideshow from "../components/Slideshow";
 import Footer from "../components/Footer";
 import logements from "../data/logements";
 import { useParams } from "react-router-dom";
-import "./Logement.css";
 
 import Rating from "../components/Rating/Rating";
+import Collapse from "../components/Collapse";
+
+import "./Logement.css";
 
 function Logement() {
   const { id } = useParams();
 
-  const logement = logements.find((logement) => logement.id === id);
+  const logement = logements.find((l) => l.id === id);
 
   if (!logement) {
     return <p>Logement introuvable</p>;
@@ -49,18 +51,22 @@ function Logement() {
         </div>
       </div>
 
-      <div className="box">
-        <h2>Description</h2>
-        <p>{logement.description}</p>
-      </div>
+      <div className="logement-collapse">
+        <Collapse
+          title="Description"
+          content={logement.description}
+        />
 
-      <div className="box">
-        <h2>Équipements</h2>
-        <ul>
-          {logement.equipments.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+        <Collapse
+          title="Équipements"
+          content={
+            <ul>
+              {logement.equipments.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          }
+        />
       </div>
 
       <Footer />

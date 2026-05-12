@@ -11,60 +11,36 @@
   cursor: pointer;
 }
 
-/* TITRE */
 .title {
   color: #ff6060;
   font-size: 36px;
   font-weight: 500;
-  margin: 0;
 }
 
-/* TEXTE LOCALISATION */
 .text {
   font-size: 18px;
-  color: black;
-  margin-top: 5px;
 }
 
-/* TAGS */
 .tags {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
   flex-wrap: wrap;
 }
 
 .tag {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
   background: #ff6060;
+  color: white;
   border-radius: 10px;
-   white-space: nowrap;
- 
-  width: 115px;
-height: 25px;
-color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 142.6%; 
+  padding: 5px 10px;
 }
 
-/* HEADER (titre + host) */
 .logement-header {
   width: 1240px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: auto;
-  padding-top: 30px;
-  
-  }
+}
 
-/* HOST */
 .host {
   display: flex;
   align-items: center;
@@ -75,58 +51,26 @@ line-height: 142.6%;
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  
 }
 
-/* BLOCS DESCRIPTION / EQUIPEMENTS */
-.box {
-  margin: 20px;
-}
-
-.box h2 {
-  background: #ff6060;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-
-/* LISTE ÉQUIPEMENTS */
-.box ul {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-}
-
-.box li {
-  margin-bottom: 5px;
-}
-
-.host-split{
-display: flex;
-gap: 0;
-width: 93px;
-height: 52px;
-
-color: #FF6060;
- flex-direction: column;
+.host-split {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 0px;
+  color: #ff6060;
 }
 .host-split p {
   margin: 0;
- 
- color: #FF6060;
-text-align: right;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 142.6%;
-
 }
 
+.logement-collapse {
+  width: 1240px;
+  margin: 30px auto;
+  display: flex;
+  gap: 20px;
+}
 
-
-
+.logement-collapse .collapse {
+  flex: 1;
+}

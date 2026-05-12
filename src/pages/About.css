@@ -1,20 +1,21 @@
 .about {
-  align-items: center;
-  gap: 38px;
   width: 1240px;
   height: 223px;
+
+  margin: 0 auto;
+
   border-radius: 25px;
-   margin: 0 auto;
+
   background-image: url("../assets/about.svg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
- }
- .collapse-about {
+}
+
+.collapse-about {
   width: 956px;
-  
-  margin: 0 auto;
+
+  margin: 30px auto;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
