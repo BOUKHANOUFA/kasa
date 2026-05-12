@@ -35,23 +35,34 @@
 }
 
 .tag {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
   background: #ff6060;
-  color: white;
-  padding: 5px 12px;
   border-radius: 10px;
-  font-size: 14px;
-  white-space: nowrap;
+   white-space: nowrap;
+ 
   width: 115px;
 height: 25px;
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 142.6%; 
 }
 
 /* HEADER (titre + host) */
 .logement-header {
+  width: 1240px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 20px;
-}
+  margin: auto;
+  padding-top: 30px;
+  
+  }
 
 /* HOST */
 .host {
@@ -64,6 +75,9 @@ height: 25px;
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  
 }
 
 /* BLOCS DESCRIPTION / EQUIPEMENTS */
@@ -91,7 +105,27 @@ height: 25px;
   margin-bottom: 5px;
 }
 
+.host-split{
+display: flex;
+gap: 0;
+width: 93px;
+height: 52px;
 
+color: #FF6060;
+ flex-direction: column;
+}
+.host-split p {
+  margin: 0;
+ 
+ color: #FF6060;
+text-align: right;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
+
+}
 
 
 

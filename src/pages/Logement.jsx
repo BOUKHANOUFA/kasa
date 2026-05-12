@@ -5,6 +5,8 @@ import logements from "../data/logements";
 import { useParams } from "react-router-dom";
 import "./Logement.css";
 
+import Rating from "../components/Rating/Rating";
+
 function Logement() {
   const { id } = useParams();
 
@@ -20,13 +22,11 @@ function Logement() {
 
       <Slideshow pictures={logement.pictures} />
 
-     
       <div className="logement-header">
         <div>
           <h1 className="title">{logement.title}</h1>
           <p className="text">{logement.location}</p>
 
-       
           <div className="tags">
             {logement.tags.map((tag) => (
               <span key={tag} className="tag">
@@ -36,20 +36,24 @@ function Logement() {
           </div>
         </div>
 
-      
-        <div className="host">
-          <p>{logement.host.name}</p>
-          <img src={logement.host.picture} alt="host" />
+        <div className="right-section">
+          <div className="host">
+            <div className="host-split">
+              <p>{logement.host.name.split(" ")[0]}</p>
+              <p>{logement.host.name.split(" ")[1]}</p>
+            </div>
+            <img src={logement.host.picture} alt="host" />
+          </div>
+
+          <Rating rate={logement.rating} />
         </div>
       </div>
 
-  
       <div className="box">
         <h2>Description</h2>
         <p>{logement.description}</p>
       </div>
 
-  
       <div className="box">
         <h2>Équipements</h2>
         <ul>
