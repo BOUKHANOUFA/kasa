@@ -1,5 +1,6 @@
 .carrousel {
-  width: 1240px;
+  max-width: 1240px;
+width: 100%;
   height: 415px;
   border-radius: 25px;
   overflow: hidden;
@@ -35,7 +36,8 @@
 }
 
 .logement-header {
-  width: 1240px;
+  max-width: 1240px;
+width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -70,7 +72,8 @@
 }
 
 .logement-collapse {
-  width: 1240px;
+  max-width: 1240px;
+width: 100%;
   margin: 30px auto;
   display: flex;
   gap: 20px;
@@ -82,4 +85,67 @@
 .right-section .rating {
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (max-width: 1024px) {
+  .carrousel {
+    height: 350px;
+  }
+
+  .logement-header {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .logement-collapse {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carrousel {
+    height: 250px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 50px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .logement-header {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .host {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logement-collapse {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+    .right-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .host img {
+    width: 48px;
+    height: 48px;
+  }
 }

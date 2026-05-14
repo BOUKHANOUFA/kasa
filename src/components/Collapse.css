@@ -43,3 +43,19 @@
 .arrow-collapse.open {
   transform: rotate(180deg);
 }
+@media screen and (max-width: 768px) {
+  .collapse-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .collapse-content {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .arrow-collapse {
+    width: 24px;
+    height: 24px;
+  }
+}
