@@ -39,12 +39,14 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+  margin: 20px auto 0 auto;
 }
 
 .host {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: flex-end;
 }
 
 .host img {
@@ -76,4 +78,8 @@
 
 .logement-collapse .collapse {
   flex: 1;
+}
+.right-section .rating {
+  display: flex;
+  justify-content: flex-end;
 }
