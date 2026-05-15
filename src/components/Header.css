@@ -49,18 +49,22 @@ flex-shrink: 0;
 }
 @media screen and (max-width: 768px) {
   .header {
-    padding: 10px 20px;
+   
+    padding: 10px 15px;
   }
 
   .logo {
-    width: 120px;
+    width: 100px;
   }
 
   .nav-header {
-    gap: 15px;
+   
+   
+    gap: 12px;
   }
 
   .nav-header a {
-    font-size: 14px;
+    font-size: 12px;
   }
+
 }

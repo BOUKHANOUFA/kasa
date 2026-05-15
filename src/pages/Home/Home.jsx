@@ -1,8 +1,8 @@
-import logements from "../data/logements";
-import Card from "../components/Card";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
+import logements from "../../data/logements";
+import Card from "../../components/Card";
+import Header from "../../components/Header";
+import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
  function Home() {
