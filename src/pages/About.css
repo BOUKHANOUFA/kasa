@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-max-width: 1240px;
+  max-width: 1240px;
   height: 223px;
 
   margin: 0 auto;
@@ -24,14 +24,11 @@ max-width: 1240px;
 /* RESPONSIVE */
 
 @media screen and (max-width: 768px) {
-
   .about {
     height: 150px;
     border-radius: 10px;
     margin: 0 auto;
- background-size: cover;
-
-   
+    background-size: cover;
   }
 
   .collapse-about {
@@ -40,5 +37,4 @@ max-width: 1240px;
     box-sizing: border-box;
     gap: 20px;
   }
-
 }

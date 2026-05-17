@@ -5,7 +5,7 @@ import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
- function Home() {
+function Home() {
   return (
     <>
       <Header />
@@ -14,19 +14,13 @@ import { Link } from "react-router-dom";
       <div className="cards">
         {logements.map((logement) => (
           <Link to={`/logement/${logement.id}`} key={logement.id}>
-          <Card
-          
-           
-            title={logement.title}
-            image={logement.cover}
-             />
-             </Link>
-         ))}
+            <Card title={logement.title} image={logement.cover} />
+          </Link>
+        ))}
       </div>
-     
-      
+
       <Footer />
     </>
   );
 }
-export default Home
+export default Home;

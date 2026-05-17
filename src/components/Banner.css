@@ -2,21 +2,20 @@
   align-items: center;
   gap: 50px;
   max-width: 1240px;
-width: 100%;
+  width: 100%;
   height: 223px;
   border-radius: 25px;
-   margin: 0 auto;
+  margin: 0 auto;
   background-image:
-  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("../assets/home.svg");
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/home.svg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
-  
- }
+}
 .banner-h1 {
-  color: #FFF;
+  color: #fff;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Montserrat, sans-serif;
   font-size: 48px;
