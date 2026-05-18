@@ -46,8 +46,9 @@ function Logement() {
             </div>
             <img src={logement.host.picture} alt="host" />
           </div>
-
+<div>
           <Rating rate={logement.rating} />
+          </div>
         </div>
       </div>
 
